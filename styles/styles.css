@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Bree-Bold';
+    src: url(/media/fonts/Bree-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Bree-Regular';
+    src: url(/media/fonts/Bree-Regular.ttf);
+}
+@font-face {
+    font-family: 'clanpro-news';
+    src: url(/media/fonts/clanpro-news.ttf);
+}
+@font-face {
+    font-family: 'Helvetic';
+    src: url(/media/fonts/Helvetic.ttf);
+}
+
+:root {
+    --azul_catolica: #1B5CFF;
+    --azul_hover_catolica: #467aff;
+    --verde_catolica: #36A2BC;
+    --verde_hover_catolica: #57bed8;
+    --amarillo_catolica: #F4DA40;
+    --amarillo_hover_catolica: #e7c70d;
+    --gris_oscuro: #525252;
+    --blanco: #ffffff;
+    --Bree_Bold: 'Bree-Bold';
+    --Bree_Regular: 'Bree-Regular';
+    --Clanpro_news: 'clanpro-news';
+    --Helvetic: 'Helvetic';
+}
+
+/* HEADER */
+.message_top_container {
+    background-color: var(--azul_catolica);
+    color: var(--blanco);
+    font-family: var(--Bree_Bold);
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
+.message_top {
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo_catolica {
+    width: 100px;
+}
+
+.name_catolica_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.name_catolica {
+    font-family: var(--Bree_Regular);
+    color: var(--azul_catolica);
+}
+
+.lema_catolica {
+    font-size: 12px;
+    font-family: var(--Bree_Bold);
+}
+
+.lema_explora {
+    color: var(--amarillo_catolica);
+}
+
+.lema_descubre {
+    color: var(--azul_catolica);
+}
+
+.lema_aprende {
+    color: var(--verde_catolica);
+}
