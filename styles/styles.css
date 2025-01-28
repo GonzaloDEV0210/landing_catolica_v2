@@ -186,3 +186,28 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+.swiper_section1_flecha {
+    width: 30px;
+    position: absolute;
+    z-index: 10;
+}
+
+.swiper-atras-flecha {
+    left: 10px;
+    top: 45%;
+    transform: translateY(-50%);
+    transform: rotate(180deg);
+}
+
+.swiper-siguiente-flecha {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icon_slider1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

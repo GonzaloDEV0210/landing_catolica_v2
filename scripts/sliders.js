@@ -6,5 +6,9 @@ const swiper = new Swiper('.swiper_images_section_1', {
         disableOnInteraction: false,
     },
     speed: 1000,
-    spaceBetween: 10,
+    spaceBetween: 15,
+    navigation: {
+        nextEl: '.swiper-siguiente-flecha',
+        prevEl: '.swiper-atras-flecha',
+    }
 });
