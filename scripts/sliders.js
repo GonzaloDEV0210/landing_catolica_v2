@@ -57,3 +57,18 @@ const swiper_4 = new Swiper('#swiper4', {
         prevEl: '.icono_flecha_slider4_atras',
     }
 });
+
+const swiper_opiniones = new Swiper('#swiper_opiniones', {
+    loop: true,
+    slidesPerView: 1,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    speed: 1000,
+    spaceBetween: 50,
+    navigation: {
+        nextEl: '.flecha_opiniones_siguiente',
+        prevEl: '.flecha_opiniones_atras',
+    }
+});
