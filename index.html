@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Católica School</title>
+    <link rel="shortcut icon" href="/media/icons/logo_catolica.png" type="image/x-icon">
     <!-- Estilos -->
      <link rel="stylesheet" href="/styles/styles.css">
     <!-- Swiper -->
@@ -17,7 +18,7 @@
         <section class="header_logo">
             <img class="logo_catolica" src="/media/icons/logo_catolica.png" alt="Logo de Catolica School">
             <div class="name_catolica_container">
-                <h1 class="name_catolica">CATÓLICA SCHOOL</h1>
+                <h1 class="name_catolica">CATÓLICA<br> SCHOOL</h1>
                 <h2 class="lema_catolica">
                     <span class="lema_explora">Explora</span>
                     <span class="lema_descubre">descubre</span>
@@ -58,10 +59,12 @@
                     </div>
 
                     <div class="swiper_section1_flecha swiper-atras-flecha">
-                        <img class="icon_slider1 icon_slider1_atras" src="/media/icons/flecha_siguiente_atrás_negro.png" alt="Icono de atrás">
+                        <img class="icon_slider1 icon_slider1_atras img_flecha_negras_slide1" src="/media/icons/flecha_siguiente_atrás_negro.png" alt="Icono de atrás">
+                        <img class="icon_slider1 icon_slider1_atras img_flecha_blanco_slide1" src="/media/icons/flecha_siguiente_atras_blanco.png" alt="Icono de atrás">
                     </div>
                     <div class="swiper_section1_flecha swiper-siguiente-flecha">
-                        <img class="icon_slider1 icon_slider1_siguiente" src="/media/icons/flecha_siguiente_atrás_negro.png" alt="Icono de siguiente">
+                        <img class="icon_slider1 icon_slider1_siguiente img_flecha_negras_slide1" src="/media/icons/flecha_siguiente_atrás_negro.png" alt="Icono de siguiente">
+                        <img class="icon_slider1 icon_slider1_siguiente img_flecha_blanco_slide1" src="/media/icons/flecha_siguiente_atras_blanco.png" alt="Icono de siguiente">
                     </div>
                 </div>
                 <h2 class="section_text">Descubre la excelencia educativa en Católica School</h2>
@@ -69,7 +72,186 @@
                     <h3>¡ÚLTIMAS VACANTES!</h3>
                 </div>
             </div>
-            <div></div>
+            <div class="container_form_text">
+                <div class="container_text_section1">
+                    <h2>¡MATRÍCULA 2025!</h2>
+                </div>
+                <div class="container_form">
+                    <form id="form" action="" method="post">
+                        <p class="form_title">Registra tus datos y te contactaremos</p>
+                        <div class="form_container_name form_container_input">
+                            <input type="text" name="name" id="name" class="form_name" placeholder="Nombre y apellido">
+                            <span class="form_error name_error">Introduzca su nombre y apellido</span>
+                        </div>
+                        <div class="form_container_email form_container_input">
+                            <input type="email" name="email" id="email" class="form_email" placeholder="Correo">
+                            <span class="form_error email_error">Introduzca su correo</span>
+                        </div>
+                        <div class="container_form_dni_phone">
+                            <div class="form_container_dni form_container_input">
+                                <input type="text" name="dni" id="dni" class="form_dni" placeholder="DNI">
+                                <span class="form_error dni_error">Introduzca su dni</span>
+                            </div>
+                            <div class="form_container_phone form_container_input">
+                                <input type="text" name="phone" id="phone" class="form_phone" placeholder="Teléfono Celular">
+                                <span class="form_error phone_error">Introduzca su celular</span>
+                            </div>
+                        </div>
+                        <div class="form_container_input form_container_nivel">
+                            <label for="form_nivel">Nivel</label>
+                            <select name="form_nivel" id="form_nivel">
+                                <option value="seleccion">Por favor, seleccione una opción</option>
+                                <option value="3_anios">3 Años</option>
+                                <option value="4_anios">4 Años</option>
+                                <option value="5_anios">5 Años</option>
+                                <option value="primero_primaria">1° Primaria</option>
+                                <option value="segundo_primaria">2° Primaria</option>
+                                <option value="tercero_primaria">3° Primaria</option>
+                                <option value="cuarto_primaria">4° Primaria</option>
+                                <option value="quinto_primaria">5° Primaria</option>
+                                <option value="sexto_primaria">6° Primaria</option>
+                                <option value="primero_secundaria">1° Secundaria</option>
+                                <option value="segundo_secundaria">2° Secundaria</option>
+                                <option value="tercero_secundaria">3° Secundaria</option>
+                                <option value="cuarto_secundaria">4° Secundaria</option>
+                                <option value="quinto_secundaria">5° Secundaria</option>
+                            </select>
+                            <span class="form_error nivel_error">Seleccione alguna opción</span>
+                        </div>
+                        <div class="container_terminos_form">
+                            <input type="checkbox" name="terminos" id="form_terminos">
+                            <p class="text_terminos">Doy consentimiento de mis datos personales de acuerdo con la política de privacidad</p>
+                        </div>
+                        <button class="form_submit" type="submit">AGENDA TU VISITA AQUÍ</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_2_green">
+            <img src="/media/figuras/figura3.svg" alt="Figura de la católica" class="figura_section2">
+            <h3 class="text_section2">20 Años de experiencia educativa nos avalan, contamos con un campus de más de 5000 m2 exclusivamente dedicados para nuestra comunidad educativa.</h3>
+            <div class="container_sliders_section2">
+                <div class="container_slide2">
+                    <div id="swiper_slide2" class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <p class="text_slide2">Talleres de Música, Teatro, psicomotricidad, laboratorios de ciencias, sala Smart</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="text_slide2">Piscinas temperadas y techadas , inscritos en la federación deportiva peruana de Natación.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="text_slide2">Aulas retadoras con iluminación natural con tecnología de vanguardia.</p>
+                            </div>
+                        </div>
+                        <div class="slide2_flechas slide2_flecha_atras">
+                            <img src="/media/icons/flecha_siguiente_atras_verde.png" alt="Icono de siguiente o atras">
+                        </div>
+                        <div class="slide2_flechas slide2_flecha_siguiente">
+                            <img src="/media/icons/flecha_siguiente_atras_verde.png" alt="Icono de siguiente o atras">
+                        </div>
+                    </div>
+                </div>
+                <div class="container_slide3">
+                    <div id="swiper_slide3" class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="img_slider3" src="/media/imagenes/aprenden11.jpg" alt="Atelier de Católica School">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img_slider3" src="/media/imagenes/aprenden05.jpg" alt="Piscina de Católica School">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="img_slider3" src="/media/imagenes/aprenden12.jpg" alt="Aulas de Católica School">
+                            </div>
+                        </div>
+                        <div class="flecha_slider3 flecha_slider3_atras">
+                            <img class="img_flecha_negras_slide3" src="/media/icons/flecha_siguiente_atrás_negro.png" alt="">
+                            <img class="img_flecha_blanco_slide3" src="/media/icons/flecha_siguiente_atras_blanco.png" alt="">
+                        </div>
+                        <div class="flecha_slider3 flecha_slider3_siguiente">
+                            <img class="img_flecha_negras_slide3" src="/media/icons/flecha_siguiente_atrás_negro.png" alt="">
+                            <img class="img_flecha_blanco_slide3" src="/media/icons/flecha_siguiente_atras_blanco.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container_buttons_section2">
+                <a class="button_section2 button_wsp_section2" href="https://wa.me/+51906026820" target="_blank">
+                    <img src="/media/icons/whatsapp_normal.png" alt="Icono de whatsapp">
+                    <span>WHATSAPP</span>
+                </a>
+                <a class="button_section2 button_agenda_section2" href="#form">
+                    <span>AGENDA TU VISITA AQUÍ</span>
+                    <img src="/media/icons/flecha_visita_blanco.png" alt="Icono de agenda tu visita">
+                </a>
+            </div>
+        </section>
+
+        <section class="section_3_white">
+            <h3 class="text_section3">Propuesta educativa de vanguardia para los futuros ciudadanos del mundo. Nuestros aliados en la educación.</h3>
+            <div class="container_slider4">
+                <div id="swiper4" class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="img_slider4" src="/media/aliados/cambridge.png" alt="Aliado de católica school">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img_slider4" src="/media/aliados/carabayllo.png" alt="Aliado de católica school">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img_slider4" src="/media/aliados/compania.png" alt="Aliado de católica school">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img_slider4" src="/media/aliados/cuentas.png" alt="Aliado de católica school">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img_slider4" src="/media/aliados/education.png" alt="Aliado de católica school">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img_slider4" src="/media/aliados/edulink.png" alt="Aliado de católica school">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img_slider4" src="/media/aliados/eureka.png" alt="Aliado de católica school">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img_slider4" src="/media/aliados/explorer.png" alt="Aliado de católica school">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img_slider4" src="/media/aliados/google.png" alt="Aliado de católica school">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img_slider4" src="/media/aliados/junior.png" alt="Aliado de católica school">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img_slider4" src="/media/aliados/la_plaza.png" alt="Aliado de católica school">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img_slider4" src="/media/aliados/leomil.png" alt="Aliado de católica school">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img_slider4" src="/media/aliados/mali.png" alt="Aliado de católica school">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img_slider4" src="/media/aliados/peruschool.png" alt="Aliado de católica school">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img_slider4" src="/media/aliados/valencia.png" alt="Aliado de católica school">
+                        </div>
+                    </div>
+                    <div class="icono_flecha_slider4 icono_flecha_slider4_atras">
+                        <img src="/media/icons/flecha_siguiente_atrás_negro.png" alt="Icono de siguiente y atras">
+                    </div>
+                    <div class="icono_flecha_slider4 icono_flecha_slider4_siguiente">
+                        <img src="/media/icons/flecha_siguiente_atrás_negro.png" alt="Icono de siguiente y atras">
+                    </div>
+                </div>
+            </div>
+            <a class="button_section_3" href="#form" target="_blank" rel="noopener noreferrer">
+                <span>AGENDA TU VISITA AQUÍ</span>
+                <img src="/media/icons/flecha_visita_blanco.png" alt="Icono de agenda tu visita">
+            </a>
         </section>
     </main>
     <footer></footer>
