@@ -21,6 +21,59 @@
     font-family: 'Helvetic';
     src: url(/media/fonts/Helvetic.ttf);
 }
+@font-face {
+    font-family: 'Saira Condensed';
+    src: url(/media/fonts/SairaCondensed-Thin.ttf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Saira Condensed';
+    src: url(/media/fonts/SairaCondensed-ExtraLight.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Saira Condensed';
+    src: url(/media/fonts/SairaCondensed-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Saira Condensed';
+    src: url(/media/fonts/SairaCondensed-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Saira Condensed';
+    src: url(/media/fonts/SairaCondensed-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Saira Condensed';
+    src: url(/media/fonts/SairaCondensed-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Saira Condensed';
+    src: url(/media/fonts/SairaCondensed-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Saira Condensed';
+    src: url(/media/fonts/SairaCondensed-ExtraBold.ttf);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Saira Condensed';
+    src: url(/media/fonts/SairaCondensed-Black.ttf);
+    font-weight: 900;
+}
 
 :root {
     --azul_catolica: #1B5CFF;
@@ -41,6 +94,7 @@
     --Bree_Regular: 'Bree-Regular';
     --Clanpro_news: 'clanpro-news';
     --Helvetic: 'Helvetic';
+    --sairaCondensed: 'Saira Condensed';
 }
 
 /* HEADER */
@@ -82,8 +136,10 @@
 }
 
 .name_catolica {
-    font-family: var(--Bree_Regular);
+    font-family: var(--sairaCondensed);
     color: var(--azul_catolica);
+    font-weight: 600;
+    line-height: 20px;
 }
 
 .lema_catolica {
