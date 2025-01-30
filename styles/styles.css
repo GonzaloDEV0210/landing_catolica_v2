@@ -655,6 +655,10 @@ html {
     padding-bottom: 50px;
 }
 
+.container_slider4 {
+    margin-top: 50px;
+}
+
 .title_opiniones {
     color: var(--blanco);
     text-align: center;
@@ -1051,6 +1055,10 @@ html {
         width: 800px;
         margin: auto;
     }
+
+    .title_opiniones {
+        width: 400px;
+    }
 }
 
 @media (min-width: 1100px) {
@@ -1059,6 +1067,7 @@ html {
         align-items: center;
         margin: 50px 0;
         text-align: center;
+        justify-content: center;
     }
 
     .container_slide2{
@@ -1080,6 +1089,9 @@ html {
 
     .section_1_blue {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
     }
 
     .container_image_1 {
@@ -1090,6 +1102,10 @@ html {
         width: 500px;
     }
 
+    .figura_section_1 {
+        width: 310px;
+    }
+
     #swiper_1 {
         width: 400px;
         height: 300px;
@@ -1097,5 +1113,203 @@ html {
 
     .container_form {
         width: 100%;
+    }
+
+    .container_buttons_section2 {
+        flex-direction: row;
+    }
+
+    .button_section4, .button_section_3, .button_section2, .form_submit {
+        width: 300px;
+        z-index: 10;
+    }
+}
+
+@media (min-width: 1100px) {
+    #swiper_1 {
+        width: 100%;
+    }
+
+    .section_1_blue {
+        gap: 50px;
+    }
+
+    #swiper_slide2 {
+        width: 500px;
+    } 
+    
+    #swiper_slide3 {
+        width: 400px;
+    }
+
+    .container_buttons_section2 {
+        width: 800px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        padding: 0 20px;
+    }
+
+    .container_direccion, .container_soporte_admision  {
+        width: 300px;
+    }
+
+    .container_image_1 {
+        width: 600px;
+    }
+
+    #swiper_1 {
+        height: 400px;
+    }
+
+    .container_form_text {
+        width: 550px;
+    }
+
+    .link_wsp_fixed img {
+        width: 100px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .header {
+        padding: 0 90px;
+    }
+
+    .header_link_social_intranet {
+        width: 130px;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    .icon_network_header_w {
+        width: 34px;
+    }
+
+    .icon_network_header_f {
+        width: 28px;
+    }
+
+    .icon_network_header_i {
+        width: 28px;
+    }
+
+    .header_link_social_f, .header_link_social_i {
+        padding: 8px 8px 5px 8px;
+    }
+
+    .container_sliders_section2 {
+        gap: 40px;
+    }
+
+    #swiper_slide2 {
+        width: 100%;
+    }
+
+    #swiper_slide3 {
+        width: 100%;
+    }
+
+    .figura_section2 {
+        left: 40px;
+        width: 600px;
+    }
+
+    .container_footer_top {
+        width: 1300px;
+        margin: auto;
+    }
+
+    .section_1_blue {
+        align-items: flex-start;
+    }
+
+    .section_text {
+        margin: 30px 0;
+    }
+}
+
+@media (min-width: 1500px) {
+    .header {
+        padding: 0 120px;
+    }
+
+    .container_sliders_section2 {
+        gap: 150px;
+    }
+
+    .container_buttons_section2 {
+        gap: 250px;
+    }
+
+    .section_4_video {
+        padding: 0;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container_opiniones {
+        padding: 0;
+    }
+
+    .title_opiniones {
+        padding-top: 0;
+    }
+
+    .button_section4, .button_section_3, .button_section2 {
+        width: 500px;
+    }
+
+    .container_buttons_section2 {
+        width: 1300px;
+    }
+
+    .section_1_blue {
+        gap: 120px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .header {
+        padding: 0 150px;
+    }
+
+    .container_form_text {
+        width: 700px;
+    }
+
+    .container_form  {
+        height: 480px;
+        padding-top: 40px;
+    }
+
+    .form_title  {
+        font-size: 25px;
+    }
+
+    .container_slide3  {
+        width: 680px;
+    }
+
+    .section_3_white {
+        padding-bottom: 60px;
+    }
+
+    .container_slide2 {
+        width: 700px;
+    }
+
+    .text_slide2 {
+        font-size: 24px;
+    }
+
+    .text_section2, .text_section3, .title_opiniones {
+        font-size: 28px;
     }
 }

@@ -60,6 +60,18 @@ const swiper_4 = new Swiper('#swiper4', {
         800: {
             slidesPerView: 2,
             spaceBetween: -50,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: -60,
+        },
+        1600: {
+            slidesPerView: 4,
+            spaceBetween: -60,
+        },
+        1800: {
+            slidesPerView: 5,
+            spaceBetween: -60,
         }
     }
 });
@@ -81,6 +93,14 @@ const swiper_opiniones = new Swiper('#swiper_opiniones', {
         800: {
             slidesPerView: 2,
             spaceBetween: -50,
+        },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: -60,
+        },
+        1700: {
+            slidesPerView: 4,
+            spaceBetween: -60,
         }
     }
 });
