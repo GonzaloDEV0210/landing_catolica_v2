@@ -869,3 +869,32 @@ html {
 .link_wsp_fixed img {
     width: 60px;
 }
+
+/* TAMAÑO IPAD - 810px */
+@media (min-width: 600px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    #swiper_1 {
+        width: 480px;
+        height: 310px;
+    }
+
+    .container_mapa {
+        height: 200px;
+        width: 300px;
+        margin: auto;
+      }
+
+      .button_section4, .button_section_3, .button_section2, .form_submit {
+        width: 50%;
+      }
+
+      #swiper_slide2, #swiper_slide3 {
+        width: 70%;
+      }
+}
