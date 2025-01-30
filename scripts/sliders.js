@@ -55,6 +55,12 @@ const swiper_4 = new Swiper('#swiper4', {
     navigation: {
         nextEl: '.icono_flecha_slider4_siguiente',
         prevEl: '.icono_flecha_slider4_atras',
+    },
+    breakpoints: {
+        800: {
+            slidesPerView: 2,
+            spaceBetween: -50,
+        }
     }
 });
 
@@ -70,5 +76,11 @@ const swiper_opiniones = new Swiper('#swiper_opiniones', {
     navigation: {
         nextEl: '.flecha_opiniones_siguiente',
         prevEl: '.flecha_opiniones_atras',
+    },
+    breakpoints: {
+        800: {
+            slidesPerView: 2,
+            spaceBetween: -50,
+        }
     }
 });

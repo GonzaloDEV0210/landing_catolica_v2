@@ -228,7 +228,7 @@ html {
 }
 
 #swiper_1 {
-    width: 280px;
+    width: 90%;
     height: 210px;
 }
 
@@ -382,6 +382,7 @@ html {
     font-family: var(--Bree_Bold);
     border-radius: 5px;
     transition: .3s;
+    font-size: 17px;
     &:hover {
         background-color: var(--amarillo_hover_catolica);
         cursor: pointer;
@@ -870,7 +871,22 @@ html {
     width: 60px;
 }
 
-/* TAMAÑO IPAD - 810px */
+/* 400px */
+@media (min-width: 400px) {
+    #swiper_1 {
+        width: 90%;
+        height: 270px;
+    }
+}
+
+@media (min-width: 460px) {
+    #swiper_1 {
+        width: 90%;
+        height: 330px;
+    }
+}
+
+/* TAMAÑO IPAD - 600px */
 @media (min-width: 600px) {
     .header {
         flex-direction: row;
@@ -881,7 +897,7 @@ html {
 
     #swiper_1 {
         width: 480px;
-        height: 310px;
+        height: 330px;
     }
 
     .container_mapa {
@@ -897,4 +913,189 @@ html {
       #swiper_slide2, #swiper_slide3 {
         width: 70%;
       }
+}
+
+/* 700 px */
+@media (min-width: 700px) {
+    .container_form {
+        width: 500px;
+    }
+
+    #form {
+        gap: 10px;
+    }
+
+    #name, #email, #form_nivel {
+        padding: 10px;
+        font-size: 17px;
+    }
+
+    #dni, #phone {
+        padding: 10px;
+        font-size: 17px;
+    }
+
+    .form_submit {
+        width: 70%;
+    }
+
+    #swiper_opiniones {
+        margin: 40px auto;
+        width: 500px;
+    }
+
+    #swiper4 {
+        width: 500px;
+    }
+
+    .section_text, .form_title {
+        font-size: 20px;
+    }
+
+    .label_nivel_form {
+        font-size: 18px;
+    }
+
+    .text_terminos {
+        font-size: 15px;
+    }
+
+    .text_section2, .text_section3, .title_opiniones {
+        font-size: 22px;
+    }
+
+    .title_opiniones {
+        width: 300px;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+
+    .text_slide2 {
+        font-size: 19px;
+        width: 70%;
+        padding: 15px 0;
+    }
+
+    .text_opinion {
+        font-size: 16px;
+    }
+}
+
+/* 800px */
+@media (min-width: 800px) {
+    #swiper4, #swiper_opiniones {
+        width: 90%;
+    }
+
+    .container_footer_top {
+        width: 90%;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .figura_section_1 {
+        width: 800px;
+        top: 195px;
+    }
+
+    .figura_section2 {
+        width: 520px;
+    }
+
+    .container_form {
+        z-index: 10;
+        width: 700px;
+    }
+
+    .container_mapa {
+        width: 200px;
+    }
+
+    .container_direccion {
+        width: 200px;
+    }
+}
+
+/* 900px */
+@media (min-width: 900px) {
+    .container_mapa {
+        width: 260px;
+    }
+
+    #swiper_1 {
+        width: 680px;
+        height: 430px;
+    }
+
+    .section_2_green, .section_3_white, .section_4_video {
+        padding: 60px 0;
+    }
+
+    .section_4_video, .section_3_white {
+        padding-bottom: 20px;
+    }
+
+    .footer {
+        padding-top: 40px;
+    }
+}
+
+@media (min-width: 950px) {
+    .container_redes_footer {
+        width: 160px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .text_section2, .text_section3, .title_opiniones {
+        width: 800px;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1100px) {
+    .container_sliders_section2 {
+        display: flex;
+        align-items: center;
+        margin: 50px 0;
+        text-align: center;
+    }
+
+    .container_slide2{
+        width: 620px;
+    }
+
+    .container_slide3 {
+        width: 480px;
+    }
+
+    .container_mapa {
+        width: 320px;
+        height: 260px;
+    }
+
+    .container_redes_footer {
+        width: 180px;
+    }
+
+    .section_1_blue {
+        display: flex;
+    }
+
+    .container_image_1 {
+        width: 500px;
+    }
+
+    .container_form_text {
+        width: 500px;
+    }
+
+    #swiper_1 {
+        width: 400px;
+        height: 300px;
+    }
+
+    .container_form {
+        width: 100%;
+    }
 }
