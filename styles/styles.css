@@ -1171,6 +1171,10 @@ html, body {
         padding: 0 90px;
     }
 
+    .message_top {
+        font-size: 20px;
+    }
+
     .header_link_social_intranet {
         width: 130px;
         text-align: center;
@@ -1281,6 +1285,10 @@ html, body {
         padding: 0 150px;
     }
 
+    .message_top  {
+        font-size: 24px;
+    }
+
     .container_form_text {
         width: 700px;
     }
@@ -1291,7 +1299,7 @@ html, body {
     }
 
     .form_title  {
-        font-size: 25px;
+        font-size: 23px;
     }
 
     .container_slide3  {
@@ -1315,7 +1323,7 @@ html, body {
     }
 
     #swiper_slide3 {
-        height: 480px;
+        height: 390px;
         width: 650px;
     }
 }
