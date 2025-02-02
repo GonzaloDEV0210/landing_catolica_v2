@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css">
     <!-- Animated -->
      <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css">
+     <!-- EmailJS -->
+     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
      <!-- Meta Pixel Code -->
     <script>
         !function(f,b,e,v,n,t,s)
@@ -120,20 +122,20 @@
                             <label class="label_nivel_form" for="form_nivel">Nivel</label>
                             <select name="form_nivel" id="form_nivel">
                                 <option value="seleccion">Por favor, seleccione una opción</option>
-                                <option value="3_anios">3 Años</option>
-                                <option value="4_anios">4 Años</option>
-                                <option value="5_anios">5 Años</option>
-                                <option value="primero_primaria">1° Primaria</option>
-                                <option value="segundo_primaria">2° Primaria</option>
-                                <option value="tercero_primaria">3° Primaria</option>
-                                <option value="cuarto_primaria">4° Primaria</option>
-                                <option value="quinto_primaria">5° Primaria</option>
-                                <option value="sexto_primaria">6° Primaria</option>
-                                <option value="primero_secundaria">1° Secundaria</option>
-                                <option value="segundo_secundaria">2° Secundaria</option>
-                                <option value="tercero_secundaria">3° Secundaria</option>
-                                <option value="cuarto_secundaria">4° Secundaria</option>
-                                <option value="quinto_secundaria">5° Secundaria</option>
+                                <option value="3 Años">3 Años</option>
+                                <option value="4 Años">4 Años</option>
+                                <option value="5 Años">5 Años</option>
+                                <option value="1° primaria">1° Primaria</option>
+                                <option value="2° primaria">2° Primaria</option>
+                                <option value="3° primaria">3° Primaria</option>
+                                <option value="4° primaria">4° Primaria</option>
+                                <option value="5° primaria">5° Primaria</option>
+                                <option value="6° primaria">6° Primaria</option>
+                                <option value="1° secundaria">1° Secundaria</option>
+                                <option value="2° secundaria">2° Secundaria</option>
+                                <option value="3° secundaria">3° Secundaria</option>
+                                <option value="4° secundaria">4° Secundaria</option>
+                                <option value="5° secundaria">5° Secundaria</option>
                             </select>
                             <span class="form_error nivel_error">Seleccione alguna opción</span>
                         </div>
@@ -390,5 +392,32 @@
     <script src="/node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="/scripts/sliders.js"></script>
     <script src="/scripts/formulario.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("ZwZmAq3n2C-2yissp"); // Reemplaza con tu Public Key
+        })();
+    </script>
+    <script>
+        document.getElementById("form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita que la página se recargue
+        
+            emailjs.sendForm(
+                "service_bttmmap",   // Reemplaza con tu Service ID
+                "template_e5bntdb",  // Reemplaza con tu Template ID
+                this
+            ).then(
+                function(response) {
+                    console.log("Correo enviado con éxito:", response);
+                    alert("Correo enviado correctamente");
+                },
+                function(error) {
+                    console.error("Error al enviar el correo:", error);
+                    alert("Hubo un error al enviar el correo");
+                }
+            );
+        });
+        </script>
+        
 </body>
 </html>
