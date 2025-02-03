@@ -406,6 +406,26 @@ html {
     display: none;
 }
 
+
+
+
+
+
+
+.error {
+    outline: 3px solid red;
+}
+
+.error::placeholder {
+    color: red; 
+}
+
+
+
+
+
+
+
 /* SECTION 2 */
 .section_2_green {
     /* background-color: var(--verde_catolica); */
