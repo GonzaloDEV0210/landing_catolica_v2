@@ -359,14 +359,15 @@ html {
     border-radius: 5px;
 }
 
-#name::placeholder, #email::placeholder, #form_nivel, #dni::placeholder, #phone::placeholder {
+.form_name::placeholder, .form_email::placeholder, .form_dni::placeholder, .form_phone::placeholder, .class_form_nivel {
     color: var(--gris_claro);
 }
 
 .form_error {
-    color: rgb(255, 163, 163);
+    color: rgb(235, 109, 109);
     font-size: 12.5px;
     font-weight: lighter;
+    margin-top: 5px;
 }
 
 .container_terminos_form {
@@ -402,25 +403,30 @@ html {
     width: 100%;
 }
 
-.form_error {
+.form_error_oculto {
     display: none;
 }
 
-
+.active_error {
+    display: inline-block;
+}
 
 
 
 
 
 .error {
-    outline: 3px solid red;
+    outline: 3px solid rgb(235, 109, 109);
 }
 
 .error::placeholder {
-    color: red; 
+    color: rgb(235, 109, 109);
+    font-weight: bold;
 }
 
-
+.error_nivel {
+    color: rgb(235, 109, 109);
+}
 
 
 

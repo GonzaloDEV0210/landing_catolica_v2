@@ -101,26 +101,26 @@
                     <form id="form" action="" method="post">
                         <p class="form_title">Registra tus datos y te contactaremos</p>
                         <div class="form_container_name form_container_input">
-                            <input type="text" name="name" id="name" class="form_name error" placeholder="Nombre y apellido">
-                            <span class="form_error name_error">Introduzca su nombre y apellido</span>
+                            <input type="text" name="name" id="name" class="form_name" placeholder="Nombre y apellido">
+                            <span class="form_error form_error_oculto name_error">Introduzca su nombre y apellido</span>
                         </div>
                         <div class="form_container_email form_container_input">
                             <input type="email" name="email" id="email" class="form_email" placeholder="Correo">
-                            <span class="form_error email_error">Introduzca su correo</span>
+                            <span class="form_error form_error_oculto email_error">Introduzca su correo</span>
                         </div>
                         <div class="container_form_dni_phone">
                             <div class="form_container_dni form_container_input">
                                 <input type="text" name="dni" id="dni" class="form_dni" placeholder="DNI">
-                                <span class="form_error dni_error">Introduzca su dni</span>
+                                <span class="form_error form_error_oculto dni_error">Introduzca su dni</span>
                             </div>
                             <div class="form_container_phone form_container_input">
                                 <input type="text" name="phone" id="phone" class="form_phone" placeholder="Teléfono Celular">
-                                <span class="form_error phone_error">Introduzca su celular</span>
+                                <span class="form_error form_error_oculto phone_error">Introduzca su celular</span>
                             </div>
                         </div>
                         <div class="form_container_input form_container_nivel">
                             <label class="label_nivel_form" for="form_nivel">Nivel</label>
-                            <select name="form_nivel" id="form_nivel">
+                            <select name="form_nivel" id="form_nivel" class="class_form_nivel">
                                 <option value="seleccion">Por favor, seleccione una opción</option>
                                 <option value="3 Años">3 Años</option>
                                 <option value="4 Años">4 Años</option>
@@ -137,11 +137,11 @@
                                 <option value="4° secundaria">4° Secundaria</option>
                                 <option value="5° secundaria">5° Secundaria</option>
                             </select>
-                            <span class="form_error nivel_error">Seleccione alguna opción</span>
+                            <span class="form_error form_error_oculto nivel_error">Seleccione alguna opción</span>
                         </div>
                         <div class="container_terminos_form">
                             <input type="checkbox" name="terminos" id="form_terminos">
-                            <p class="text_terminos">Doy consentimiento de mis datos personales de acuerdo con la política de privacidad</p>
+                            <label for="form_terminos" class="text_terminos">Doy consentimiento de mis datos personales de acuerdo con la política de privacidad</label>
                         </div>
                         <button class="form_submit animate__animated animate__pulse animate__infinite" type="submit">AGENDA TU VISITA AQUÍ</button>
                     </form>
