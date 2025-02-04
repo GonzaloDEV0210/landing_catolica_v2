@@ -9,6 +9,36 @@ const email_error = document.querySelector('.email_error');
 const dni_error = document.querySelector('.dni_error');
 const phone_error = document.querySelector('.phone_error');
 const nivel_error = document.querySelector('.nivel_error');
+const check_error = document.querySelector('.check_error');
+const form = document.getElementById('form');
+
+/* form.addEventListener('submit', (event)=>{
+    if (input_name.value === "") {
+        input_name.classList.add('error');
+        name_error.classList.remove('form_error_oculto');
+        name_error.classList.add('active_error')
+    } else if (input_email.value === "") {
+        input_email.classList.add('error');
+        email_error.classList.remove('form_error_oculto');
+        email_error.classList.add('active_error')
+    } else if (input_dni.value === "") {
+        input_dni.classList.add('error');
+        dni_error.classList.remove('form_error_oculto');
+        dni_error.classList.add('active_error')
+    } else if (input_phone.value === "") {
+        input_phone.classList.add('error');
+        phone_error.classList.remove('form_error_oculto');
+        phone_error.classList.add('active_error')
+    } else if (input_nivel.value === "seleccion") {
+        input_nivel.classList.add('error', 'error_nivel');
+        nivel_error.classList.remove('form_error_oculto');
+        nivel_error.classList.add('active_error')
+    } else if (check_terminos.checked === false) {
+        check_terminos.classList.add('error', 'error_nivel');
+        check_error.classList.remove('form_error_oculto');
+        check_error.classList.add('active_error')
+    }
+}); */
 
 input_name.addEventListener('keydown', (e)=>{
     if (e.key.match(/[0-9]/)) {
@@ -79,3 +109,29 @@ input_phone.addEventListener('input', ()=>{
         phone_error.classList.remove('active_error')
     }
 })
+
+input_nivel.addEventListener('input', function(e){
+    const valor_nivel = this.value;
+    if (valor_nivel === 'seleccion') {
+        input_nivel.classList.add('error', 'error_nivel');
+        nivel_error.classList.remove('form_error_oculto');
+        nivel_error.classList.add('active_error')
+    } else {
+        input_nivel.classList.remove('error', 'error_nivel');
+        nivel_error.classList.add('form_error_oculto');
+        nivel_error.classList.remove('active_error')
+    }
+});
+
+check_terminos.addEventListener('input', function(e){
+    const valor_check = this.checked;
+    if (valor_check === false) {
+        check_terminos.classList.add('error', 'error_nivel');
+        check_error.classList.remove('form_error_oculto');
+        check_error.classList.add('active_error')
+    } else {
+        check_terminos.classList.remove('error', 'error_nivel');
+        check_error.classList.add('form_error_oculto');
+        check_error.classList.remove('active_error')
+    }
+});

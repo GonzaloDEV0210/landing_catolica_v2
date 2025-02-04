@@ -144,6 +144,7 @@
                             <label for="form_terminos" class="text_terminos">Doy consentimiento de mis datos personales de acuerdo con la política de privacidad</label>
                         </div>
                         <button class="form_submit animate__animated animate__pulse animate__infinite" type="submit">AGENDA TU VISITA AQUÍ</button>
+                        <span class="form_error form_error_oculto check_error">Seleccione los términos y condiciones</span>
                     </form>
                 </div>
             </div>
@@ -401,21 +402,49 @@
     <script>
         document.getElementById("form").addEventListener("submit", function(event) {
             event.preventDefault(); // Evita que la página se recargue
-        
-            emailjs.sendForm(
+            
+            if (input_name.value === "" || input_email.value === "" || input_dni.value === "" || input_phone.value === "" ||input_nivel.value === "seleccion" || check_terminos.checked === false) {
+                if (input_name.value === "") {
+                    input_name.classList.add('error');
+                    name_error.classList.remove('form_error_oculto');
+                    name_error.classList.add('active_error')
+                } if (input_email.value === "") {
+                    input_email.classList.add('error');
+                    email_error.classList.remove('form_error_oculto');
+                    email_error.classList.add('active_error')
+                } if (input_dni.value === "") {
+                    input_dni.classList.add('error');
+                    dni_error.classList.remove('form_error_oculto');
+                    dni_error.classList.add('active_error')
+                } if (input_phone.value === "") {
+                    input_phone.classList.add('error');
+                    phone_error.classList.remove('form_error_oculto');
+                    phone_error.classList.add('active_error')
+                } if (input_nivel.value === "seleccion") {
+                    input_nivel.classList.add('error', 'error_nivel');
+                    nivel_error.classList.remove('form_error_oculto');
+                    nivel_error.classList.add('active_error')
+                } if (check_terminos.checked === false) {
+                    check_terminos.classList.add('error', 'error_nivel');
+                    check_error.classList.remove('form_error_oculto');
+                    check_error.classList.add('active_error')
+                }
+            } else {
+                emailjs.sendForm(
                 "service_bttmmap",   // Reemplaza con tu Service ID
                 "template_e5bntdb",  // Reemplaza con tu Template ID
                 this
-            ).then(
-                function(response) {
-                    console.log("Correo enviado con éxito:", response);
-                    alert("Correo enviado correctamente");
-                },
-                function(error) {
-                    console.error("Error al enviar el correo:", error);
-                    alert("Hubo un error al enviar el correo");
-                }
-            );
+                ).then(
+                    function(response) {
+                        console.log("Correo enviado con éxito:", response);
+                        alert("Correo enviado correctamente");
+                    },
+                    function(error) {
+                        console.error("Error al enviar el correo:", error);
+                        alert("Hubo un error al enviar el correo");
+                    }
+                );
+            }
         });
         </script>
         <script src="/scripts/validations.js"></script>

@@ -428,7 +428,9 @@ html {
     color: rgb(235, 109, 109);
 }
 
-
+.check_error {
+    font-size: 17px;
+}
 
 
 
@@ -1320,8 +1322,8 @@ html, body {
     }
 
     .container_form  {
-        height: 480px;
         padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     .form_title  {
