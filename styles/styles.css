@@ -411,10 +411,6 @@ html {
     display: inline-block;
 }
 
-
-
-
-
 .error {
     outline: 3px solid rgb(235, 109, 109);
 }
@@ -431,8 +427,6 @@ html {
 .check_error {
     font-size: 17px;
 }
-
-
 
 /* SECTION 2 */
 .section_2_green {
@@ -885,6 +879,68 @@ html, body {
 }
 
 
+
+
+.container_modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.842);
+    top: 0;
+    left: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_img_cerrar {
+    width: 90%;
+    margin: auto;
+    height: 600px;
+    position: relative;
+}
+
+.img_modal {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.icon_cerrar_modal {
+    position: absolute;
+    width: 35px;
+    top: 8px;
+    right: 8px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.ocultar_modal {
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes mostrar {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.mostrar_modal {
+    opacity: 1;
+    visibility: visible;
+    animation-name: mostrar;
+    animation-duration: 1s;
+}
+
+
+
 /* 400px */
 @media (min-width: 400px) {
     #swiper_1 {
@@ -901,6 +957,10 @@ html, body {
     #swiper_1 {
         width: 90%;
         height: 330px;
+    }
+
+    .container_img_cerrar {
+        width: 450px;
     }
 }
 
@@ -1254,6 +1314,11 @@ html, body {
 
     .section_text {
         margin: 30px 0;
+    }
+
+    .container_img_cerrar {
+        width: 600px;
+        height: 800px;
     }
 }
 
